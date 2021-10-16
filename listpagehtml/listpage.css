@@ -1,0 +1,95 @@
+html,
+body {
+  overflow-x: hidden; /* Prevent scroll on narrow devices */
+}
+
+body {
+  padding-top: 20px;
+}
+
+@media (max-width: 991.98px) {
+  .offcanvas-collapse {
+    position: fixed;
+    top: 100px; /* Height of navbar */
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: #ffffff;
+    transition: transform .3s ease-in-out, visibility .3s ease-in-out;
+  }
+  .offcanvas-collapse.open {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}
+
+.nav-scroller {
+	position: relative;
+	z-index: 2;
+	height: 4rem;
+	overflow-y: hidden;
+   border-bottom: .05rem solid #bd3008;
+}
+.nav-scroller3 {
+	position: relative;
+	z-index: 2;
+	height: 2rem;
+	overflow-y: hidden;
+   border-bottom: .05rem solid #bd3008;
+}
+.nav-scroller2 {
+	position: relative;
+	z-index: 2;
+	height: 2rem;
+    overflow-y: hidden;
+   border-bottom: .05rem solid #e5e5e5;
+   background-color:#ebebeb;
+}
+
+.nav-scroller .nav {
+	display: flex;
+	flex-wrap: nowrap;
+	margin-top: -1px;
+	overflow-x: auto;
+	color: rgba(255, 255, 255, .75);
+	text-align: center;
+	white-space: nowrap;
+	-webkit-overflow-scrolling: touch;
+}
+.nav-underline .nav-link {
+padding-top: .75rem;
+padding-bottom: .75rem;
+font-size: 1.5rem;
+color: #CC3300;
+text-decoration:underline
+}
+.nav-underline .nav-link2 {
+padding-top: .75rem;
+padding-bottom: .75rem;
+font-size: 1.5rem;
+color: #CC3300;
+}
+.nav-home {
+padding-top: 1rem;
+padding-bottom: .75rem;
+font-size: 1.5rem;
+color: #cc3300;
+text-align: center;
+line-height:60px;
+}
+.nav-underline .nav-link:hover {
+  color: #007bff;
+}
+
+.nav-underline .active {
+  font-weight: 500;
+  color: #343a40;
+}
+
+.text-white-50 { color: rgba(255, 255, 255, .5); }
+
+.bg-purple { background-color: #6f42c1; }
